@@ -34,12 +34,17 @@ export default function AboutSection({ onOpenResume }) {
             <User className="w-3.5 h-3.5" />
             ABOUT THE ARCHITECT
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold text-white tracking-tight">
-            Bridging Creative 3D Vision With <span className="gradient-text-purple-pink">Engineering Rigor</span>
-          </h2>
-          <p className="text-slate-400 text-base sm:text-lg">
-            A deep dive into my background, technical philosophy, and passion for creating next-generation web platforms.
-          </p>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold text-white tracking-tight">
+  React.js Developer Building{" "}
+  <span className="gradient-text-purple-pink">
+    Modern Web & AI Experiences
+  </span>
+</h2>
+    
+<p className="text-slate-400 text-base sm:text-lg">
+  Explore my journey as a developer, technical expertise, and passion for building modern web applications, scalable backend systems, and AI-powered experiences using <strong>React.js, Next.js, Express.js, PostgreSQL, Firebase, and Firestore</strong>.
+</p>
+
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
@@ -71,10 +76,10 @@ export default function AboutSection({ onOpenResume }) {
 
                   {/* Corner Tech Badges */}
                   <div className="absolute top-3 left-3 px-2 py-0.5 rounded bg-slate-950/80 border border-white/10 text-[10px] font-mono text-slate-300">
-                    LVL. 99
+                    LVL. 50
                   </div>
                   <div className="absolute bottom-3 right-3 px-2 py-0.5 rounded bg-slate-950/80 border border-cyan-500/30 text-[10px] font-mono text-cyan-300">
-                    EXPERIENCE: 5+ YRS
+                    EXPERIENCE: 1+ YRS
                   </div>
                 </div>
 
@@ -97,9 +102,9 @@ export default function AboutSection({ onOpenResume }) {
                 {/* Core Strengths Checklist */}
                 <div className="space-y-2.5">
                   {[
-                    "Interactive 3D WebGL & GSAP Animation",
+                    "Interactive 3D GSAP Animation",
                     "React 18 & Next.js Architecture",
-                    "Express.js & PHP REST API Engineering",
+                    "Express.js & REST API Engineering",
                     "PostgreSQL & Firebase Cloud Datastores",
                     "Tailwind CSS Precision & Responsive Systems",
                   ].map((item, idx) => (
@@ -128,7 +133,7 @@ export default function AboutSection({ onOpenResume }) {
             {/* Tabs Navigation */}
             <div className="flex items-center gap-2 p-1.5 rounded-2xl bg-slate-900/80 border border-slate-800">
               {[
-                { id: 'story', label: 'My Journey & Story', icon: <Briefcase className="w-4 h-4" /> },
+                { id: 'story', label: 'My Developer Journey', icon: <Briefcase className="w-4 h-4" /> },
                 { id: 'philosophy', label: 'Engineering Philosophy', icon: <Zap className="w-4 h-4" /> },
                 { id: 'education', label: 'Education & Honors', icon: <GraduationCap className="w-4 h-4" /> },
               ].map((tab) => (
@@ -164,11 +169,11 @@ export default function AboutSection({ onOpenResume }) {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
                   <div className="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/80 space-y-1">
                     <div className="text-xs font-mono text-cyan-400 uppercase">Focus Areas</div>
-                    <div className="text-sm font-semibold text-white">Full-Stack, 3D WebGL, E-Commerce</div>
+                    <div className="text-sm font-semibold text-white">React.js, Next.js, AI Assistants</div>
                   </div>
                   <div className="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/80 space-y-1">
-                    <div className="text-xs font-mono text-purple-400 uppercase">Availability</div>
-                    <div className="text-sm font-semibold text-white">Full-Time & Freelance Worldwide</div>
+                    <div className="text-xs font-mono text-purple-400 uppercase">Tech Stack</div>
+                    <div className="text-sm font-semibold text-white">Express.js, PostgreSQL, Firebase</div>
                   </div>
                 </div>
               </div>
@@ -182,31 +187,41 @@ export default function AboutSection({ onOpenResume }) {
                   Architectural Principles & Performance Standards
                 </h4>
 
-                <div className="grid grid-cols-1 gap-4 pt-2">
-                  {[
-                    {
-                      title: "1. 60 FPS GPU-Accelerated Experiences",
-                      desc: "Every 3D scene, particle effect, and animation is tuned with efficient geometry disposal, level-of-detail optimization, and smooth requestAnimationFrame throttling."
-                    },
-                    {
-                      title: "2. Clean Component Architecture",
-                      desc: "Structured, declarative, and easily maintainable codebases adhering to strict separation of concerns, custom React hooks, and predictable state synchronization."
-                    },
-                    {
-                      title: "3. Resilient Database & API Foundations",
-                      desc: "Optimized relational indexes, parameterized queries, robust JWT authentication layers, and real-time cloud data pipelines with PostgreSQL and Firebase."
-                    },
-                    {
-                      title: "4. User-Centric Micro-Interactions",
-                      desc: "Thoughtful tactile feedback, seamless page transitions, and accessible UI patterns that keep users engaged and amplify brand conversion."
-                    }
-                  ].map((p, idx) => (
-                    <div key={idx} className="p-4 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-1 hover:border-cyan-500/30 transition-colors">
-                      <div className="text-sm font-bold text-cyan-300 font-display">{p.title}</div>
-                      <div className="text-xs text-slate-400 leading-relaxed">{p.desc}</div>
-                    </div>
-                  ))}
-                </div>
+                
+<div className="grid grid-cols-1 gap-4 pt-2">
+  {[
+    {
+      title: "1. Modern Frontend Development",
+      desc: "Building responsive, interactive, and user-friendly interfaces with React.js, Next.js, HTML5, CSS3, Tailwind CSS, and GSAP."
+    },
+    {
+      title: "2. Clean & Maintainable Code",
+      desc: "Creating reusable React components, structured project architectures, and clean code that is easy to maintain, scale, and improve."
+    },
+    {
+      title: "3. Scalable Backend & APIs",
+      desc: "Developing reliable REST APIs and backend systems with Express.js, connecting applications with PostgreSQL and Firebase for efficient data management."
+    },
+    {
+      title: "4. AI-Powered Experiences",
+      desc: "Exploring and integrating AI-powered assistants into modern web applications to create smarter, more interactive, and useful digital experiences."
+    }
+  ].map((p, idx) => (
+    <div
+      key={idx}
+      className="p-4 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-1 hover:border-cyan-500/30 transition-colors"
+    >
+      <div className="text-sm font-bold text-cyan-300 font-display">
+        {p.title}
+      </div>
+      <div className="text-xs text-slate-400 leading-relaxed">
+        {p.desc}
+      </div>
+    </div>
+  ))}
+</div>
+
+
               </div>
             )}
 
@@ -215,7 +230,7 @@ export default function AboutSection({ onOpenResume }) {
               <div className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-5 animate-in fade-in duration-300">
                 <h4 className="text-xl font-display font-bold text-white flex items-center gap-2">
                   <Award className="w-5 h-5 text-emerald-400" />
-                  Academic Foundation & Industry Certifications
+                  Education & Technical Certifications
                 </h4>
 
                 <div className="space-y-4 pt-2">

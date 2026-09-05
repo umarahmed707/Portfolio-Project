@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Send, 
-  Check, 
-  Copy, 
-  Sparkles, 
-  MessageSquare, 
-  Clock, 
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+  Check,
+  Copy,
+  Sparkles,
+  MessageSquare,
+  Clock,
   ShieldCheck,
   Calendar
 } from 'lucide-react';
 import { GithubIcon, LinkedinIcon, TwitterIcon } from './SocialIcons';
+import emailjs from "@emailjs/browser";
 import confetti from 'canvas-confetti';
 import { personalInfo } from '../data/portfolioData';
 
@@ -45,7 +46,7 @@ export default function ContactSection({ selectedService }) {
     setTimeout(() => setCopiedField(null), 2500);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setErrorMessage('');
 
@@ -56,19 +57,43 @@ export default function ContactSection({ selectedService }) {
 
     setIsSubmitting(true);
 
-    // Simulate direct dispatch
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
+    try {
+      // Send form data to your email
+      await emailjs.send(
+        "service_h6m2y7s",
+        "template_o3its84",
+        {
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          budget: formData.budget,
+          message: formData.message,
+        },
+        "UWU8kptZU6kP9MWhX"
+      );
 
-      // Trigger Confetti Celebration
-      confetti({
-        particleCount: 120,
-        spread: 80,
-        origin: { y: 0.6 },
-        colors: ['#00f2fe', '#7928ca', '#4facfe', '#10b981'],
-      });
-    }, 1200);
+      // Small delay for UI effect
+      setTimeout(() => {
+        setIsSubmitting(false);
+        setIsSubmitted(true);
+
+        // Trigger Confetti Celebration
+        confetti({
+          particleCount: 120,
+          spread: 80,
+          origin: { y: 0.6 },
+          colors: ['#00f2fe', '#7928ca', '#4facfe', '#10b981'],
+        });
+      }, 1200);
+
+    } catch (error) {
+      console.error("Email sending failed:", error);
+
+      setIsSubmitting(false);
+      setErrorMessage(
+        'Unable to send your message. Please try again later.'
+      );
+    }
   };
 
   return (
@@ -78,7 +103,7 @@ export default function ContactSection({ selectedService }) {
       <div className="glow-orb-cyan bottom-10 left-10 -z-10 opacity-50" />
 
       <div className="max-w-[1700px] mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-xs font-mono">
@@ -94,10 +119,10 @@ export default function ContactSection({ selectedService }) {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-          
+
           {/* Left Column: Direct Info Cards */}
           <div className="lg:col-span-5 space-y-6">
-            
+
             {/* Status & Availability Card */}
             <div className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-4">
               <div className="flex items-center gap-2 text-xs font-mono text-emerald-400">
@@ -113,7 +138,7 @@ export default function ContactSection({ selectedService }) {
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-sans">
                 Ready for high-impact full-stack development, 3D interactive features, complex web applications, and architectural consulting.
               </p>
-              
+
               <div className="pt-2 flex items-center gap-2 text-xs text-slate-400 font-mono">
                 <Clock className="w-3.5 h-3.5 text-cyan-400" />
                 <span>Typical response time: &lt; 4 hours</span>
@@ -122,7 +147,7 @@ export default function ContactSection({ selectedService }) {
 
             {/* Direct Contact Methods */}
             <div className="space-y-3">
-              
+
               {/* Email Card with Copy */}
               <div className="glass-panel rounded-2xl p-4 border border-white/10 flex items-center justify-between group hover:border-cyan-500/40 transition-colors">
                 <div className="flex items-center gap-3">
@@ -201,9 +226,9 @@ export default function ContactSection({ selectedService }) {
               <span className="text-xs font-mono text-slate-400">Social Profiles:</span>
               <div className="flex items-center gap-2">
                 {[
-                  { icon: <GithubIcon className="w-4 h-4" />, href: personalInfo.socials.github, name: "GitHub" },
-                  { icon: <LinkedinIcon className="w-4 h-4" />, href: personalInfo.socials.linkedin, name: "LinkedIn" },
-                  { icon: <TwitterIcon className="w-4 h-4" />, href: personalInfo.socials.twitter, name: "Twitter" },
+                  { icon: <GithubIcon className="w-4 h-4" />, href: personalInfo.socials.github, name: "https://github.com/umarahmed707?tab=repositories" },
+                  { icon: <LinkedinIcon className="w-4 h-4" />, href: personalInfo.socials.linkedin, name: "https://www.linkedin.com/in/umarahmedansari/" },
+                
                 ].map((s, idx) => (
                   <a
                     key={idx}
@@ -224,14 +249,14 @@ export default function ContactSection({ selectedService }) {
           {/* Right Column: Interactive Glassmorphic Form */}
           <div className="lg:col-span-7">
             <div className="glass-panel rounded-3xl p-6 sm:p-10 border border-white/15 relative shadow-2xl">
-              
+
               {isSubmitted ? (
                 /* Success State Screen */
                 <div className="text-center py-12 space-y-5 animate-in zoom-in-95 duration-300">
                   <div className="w-20 h-20 rounded-full bg-emerald-500/20 border-2 border-emerald-500 flex items-center justify-center mx-auto shadow-neon-emerald">
                     <Check className="w-10 h-10 text-emerald-400" />
                   </div>
-                  
+
                   <div className="space-y-2">
                     <h3 className="text-2xl font-display font-bold text-white">
                       Message Dispatched Successfully!
@@ -333,11 +358,11 @@ export default function ContactSection({ selectedService }) {
                         onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
                         className="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-cyan-400 text-sm transition-colors"
                       >
-                        <option value="<$5,000">&lt; $5,000 (Small Project / Consultation)</option>
-                        <option value="$5,000 - $15,000">$5,000 - $15,000 (Complete Web App / 3D Site)</option>
-                        <option value="$15,000 - $30,000">$15,000 - $30,000 (Enterprise E-Commerce / SaaS)</option>
-                        <option value="$30,000+">$30,000+ (Full-Scale Custom Architecture)</option>
-                        <option value="Full-Time Role">Full-Time / Contract Role Inquiry</option>
+                        <option value="Under $500">Under $500 (Small Task / Consultation)</option><option value="$500 - $1,500">$500 - $1,500 (Landing Page / Small Website)</option>
+                        <option value="$1,500 - $3,000"> $1,500 - $3,000 (Business Website / Web App)  </option>
+                        <option value="$3,000 - $5,000"> $3,000 - $5,000 (Advanced Web Application)</option>
+                        <option value="$5,000+"> $5,000+ (Custom / Large-Scale Project)</option>
+                        <option value="Full-Time Role">Full-Time / Contract Role</option>
                       </select>
                     </div>
                   </div>

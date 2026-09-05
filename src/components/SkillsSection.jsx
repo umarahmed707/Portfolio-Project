@@ -32,18 +32,23 @@ export default function SkillsSection() {
       <div className="max-w-[1700px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 text-xs font-mono">
-            <Cpu className="w-3.5 h-3.5" />
-            TECHNICAL PROFICIENCY MATRIX
-          </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold text-white tracking-tight">
-            Comprehensive <span className="gradient-text-purple-pink">Engineering Arsenal</span>
-          </h2>
-          <p className="text-slate-400 text-base sm:text-lg">
-            Mastery over modern client-side architectures, 3D WebGL animation suites, backend microservices, and high-performance databases.
-          </p>
-        </div>
+        <div className="text-center max-w-3xl mx-auto mb-14 space-y-4">
+  <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-xs font-medium tracking-wider">
+    <Cpu className="w-3.5 h-3.5" />
+    TECHNICAL EXPERTISE
+  </div>
+
+  <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-white tracking-tight">
+    Modern Technologies.
+    <span className="gradient-text-purple-pink"> Practical Solutions.</span>
+  </h2>
+
+  <p className="text-slate-400 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
+    A focused technology stack for building scalable, responsive, and
+    high-performance web applications with modern frontend, backend,
+    cloud, and database technologies.
+  </p>
+</div>
 
         {/* Category Selector Tabs */}
         <div className="flex flex-wrap items-center justify-center gap-2 mb-12">

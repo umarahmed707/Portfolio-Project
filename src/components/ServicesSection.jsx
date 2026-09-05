@@ -44,17 +44,24 @@ export default function ServicesSection({ onSelectService }) {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-xs font-mono">
-            <Layers className="w-3.5 h-3.5" />
-            SERVICES & EXPERTISE
-          </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold text-white tracking-tight">
-            Specialized Solutions for <span className="gradient-text-cyan-blue">Ambitious Digital Products</span>
-          </h2>
-          <p className="text-slate-400 text-base sm:text-lg">
-            High-caliber engineering combining visual innovation, scalable backend engines, and hyper-optimized user flows.
-          </p>
-        </div>
+  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-xs font-mono">
+    <Layers className="w-3.5 h-3.5" />
+    SERVICES & EXPERTISE
+  </div>
+
+  <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold text-white tracking-tight">
+    Modern Solutions for{" "}
+    <span className="gradient-text-cyan-blue">
+      Digital Products
+    </span>
+  </h2>
+
+  <p className="text-slate-400 text-base sm:text-lg">
+    Building modern, responsive, and scalable web solutions with clean
+    interfaces, smooth animations, powerful APIs, and reliable data management.
+  </p>
+</div>
+
 
         {/* 6 Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">

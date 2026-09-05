@@ -8,7 +8,7 @@ import ProjectsSection from './components/ProjectsSection';
 import SkillsSection from './components/SkillsSection';
 // import InteractiveTerminal from './components/InteractiveTerminal';
 import ExperienceSection from './components/ExperienceSection';
-import TestimonialsSection from './components/TestimonialsSection';
+// import TestimonialsSection from './components/TestimonialsSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import ResumeModal from './components/ResumeModal';
@@ -52,7 +52,7 @@ export default function App() {
         <ExperienceSection />
 
         {/* 8. Testimonials & Client Reviews */}
-        <TestimonialsSection />
+        {/* <TestimonialsSection /> */}
 
         {/* 9. Contact & Collaboration */}
         <ContactSection selectedService={selectedServiceForContact} />

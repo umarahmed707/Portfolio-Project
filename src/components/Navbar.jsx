@@ -75,7 +75,7 @@ export default function Navbar({ onOpenResume }) {
           : 'bg-transparent py-5'
       }`}
     >
-      <div className="max-w-[1700px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <div className="max-w-[1700px] mx-auto px-4 sm:px-6 lg:px-8 flex  items-center justify-between">
         {/* Brand Logo */}
         <a
           href="#home"
@@ -85,7 +85,7 @@ export default function Navbar({ onOpenResume }) {
           <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 via-blue-600 to-purple-600 p-[1.5px] group-hover:shadow-neon-cyan transition-all duration-300">
             <div className="w-full h-full bg-[#090d20] rounded-[10px] flex items-center justify-center">
               <span className="font-display font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 text-lg">
-                AR
+                UA
               </span>
             </div>
           </div>
@@ -94,7 +94,7 @@ export default function Navbar({ onOpenResume }) {
               {personalInfo.name}
             </span>
             <span className="text-[11px] font-mono text-cyan-400/90 tracking-wider">
-              3D & Full-Stack
+              MERN-Stack & 3D Web Creative
             </span>
           </div>
         </a>

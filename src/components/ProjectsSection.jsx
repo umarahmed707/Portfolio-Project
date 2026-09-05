@@ -37,18 +37,21 @@ export default function ProjectsSection() {
       <div className="max-w-[1700px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-xs font-mono">
-            <FolderGit2 className="w-3.5 h-3.5" />
-            SHOWCASE & CASE STUDIES
-          </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold text-white tracking-tight">
-            Featured <span className="gradient-text-cyan-blue">Projects & Systems</span>
-          </h2>
-          <p className="text-slate-400 text-base sm:text-lg">
-            A curated portfolio of high-impact 3D landing pages, full-scale e-commerce solutions, analytics dashboards, and cloud applications.
-          </p>
-        </div>
+       <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
+  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-xs font-mono">
+    <FolderGit2 className="w-3.5 h-3.5" />
+    PROJECTS & CASE STUDIES
+  </div>
+
+  <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold text-white tracking-tight">
+    Featured <span className="gradient-text-cyan-blue">Projects & Applications</span>
+  </h2>
+
+  <p className="text-slate-400 text-base sm:text-lg">
+    A collection of modern web applications built with React.js, Next.js, Tailwind CSS, Firebase, Express.js, PostgreSQL, and REST APIs — focused on responsive UI, scalable architecture, and real-world functionality.
+  </p>
+</div>
+
 
         {/* Filter Categories Bar */}
         <div className="flex flex-wrap items-center justify-center gap-2 mb-12">

@@ -1,24 +1,34 @@
+import rahaWeb from "../assets/Raha-web.png";
+import Rahalanding from "../assets/raha-landing.png"
+import AutoEye from "../assets/Auot-eye.png"
+import Naket from "../assets/Naket.png"
+import ecom from "../assets/Ecom-web.png"
+
+
 export const personalInfo = {
   name: "Umar Ahmed",
-  role: "React.js + Firebase Engineer & 3D Web Creative",
-  experienceYears: "5+",
-  tagline: "Crafting High-Performance Web Applications, Immersive 3D Experiences & Scalable Cloud Architectures.",
-  shortBio: "Passionate Full-Stack Developer specializing in building modern web applications with React, Next.js, 3D WebGL (Three.js/GSAP), and scalable backends with Express, PHP, PostgreSQL, and Firebase.",
+  role: "MERN-Stack & 3D Web Creative",
+  experienceYears: "1",
+  tagline: "Crafting High-Performance Web Applications & Scalable MERN STACK Solutions.",
+
+  shortBio: "Passionate MERN Stack Developer specializing in building modern web applications with React, Next.js, and scalable backends using Express.js, Node.js, PostgreSQL, and Firebase.",
+
   aboutText: [
-    "I am a passionate Full-Stack Engineer dedicated to pushing the boundaries of web development by blending high-precision frontend engineering with cutting-edge 3D interactive graphics and rock-solid backend architectures.",
-    "With 5+ years of experience crafting enterprise-grade web applications, interactive 3D landing pages, high-converting e-commerce ecosystems, and real-time analytical dashboards, I focus on delivering lightning-fast, visually breathtaking, and accessible user experiences.",
-    "Whether designing complex PostgreSQL & Firebase schemas, building robust REST APIs with Express and PHP, or orchestrating fluid animations with GSAP and Three.js, I turn ambitious product visions into production-ready reality."
+    "I am a passionate MERn STack Developer focused on building modern, responsive, and user-friendly web applications. I specialize in creating engaging frontend experiences with React.js, Next.js, HTML5, CSS3, Tailwind CSS, and GSAP.",
+
+    "I enjoy transforming ideas into functional digital products by combining clean UI design with reliable backend architecture. My backend development experience includes building REST APIs with Express.js and working with PostgreSQL and Firebase for structured, scalable, and reliable data management.",
+
+    "From interactive frontend interfaces to robust backend systems, I focus on writing clean, maintainable code and delivering fast, scalable, and practical web solutions. I am continuously expanding my expertise in modern web technologies, cloud applications, and AI-powered solutions."
+
   ],
   location: "Orangi Town Karachi Pakistan",
   email: "umarahmedansari0@gmail.com",
   phone: "+92 318-2593427",
-  availability: "React.js + Firebase Development Roles",
+  availability: "MERN-Stack & 3D Web Creative",
   socials: {
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
-    discord: "https://discord.com",
-    codepen: "https://codepen.io"
+    github: "https://github.com/umarahmed707?tab=repositories",
+    linkedin: "https://www.linkedin.com/in/umarahmedansari/",
+
   },
   stats: [
     { label: "Projects Completed", value: "48+", icon: "FolderCheck" },
@@ -178,118 +188,153 @@ export const skillsData = [
 
 export const servicesData = [
   {
-    id: "fullstack",
+    id: "MERN Stack",
     icon: "Code2",
-    title: "Full-Stack Web Development",
-    shortDesc: "End-to-end modern web applications engineered with React, Next.js, Express, PHP, and PostgreSQL.",
-    detailedDesc: "From conceptualization to production deployment, I architect robust full-stack applications with clean modular codebases, high test coverage, seamless state management, and blazing load times.",
-    highlights: ["React.js & Next.js SPAs/MPAs", "Express.js & PHP APIs", "PostgreSQL & Firebase DBs", "Role-based Auth & Security"]
+    title: "MERN-Stack Web Development",
+    shortDesc: "End-to-end modern web applications engineered with React, Next.js, Express,and PostgreSQL.",
+    detailedDesc: "From conceptualization to production deployment, I architect robust MERN-Stack applications with clean modular codebases, high test coverage, seamless state management, and blazing load times.",
+    highlights: ["React.js & Next.js", "Express.js APIs", "PostgreSQL & Firebase DBs", "Role-based Auth & Security"]
   },
   {
-    id: "3d-web",
-    icon: "Box",
-    title: "3D Web & Interactive Experiences",
-    shortDesc: "Immersive 3D interactive graphics, shaders, and particle physics built with Three.js and WebGL.",
-    detailedDesc: "Elevate your digital presence beyond flat 2D surfaces. I build interactive 3D product visualizers, scroll-reactive 3D scenes, particle simulations, and gamified landing pages.",
-    highlights: ["Three.js Scene Orchestration", "Custom GLSL Shaders & Particles", "Mouse & Scroll Physics", "60 FPS GPU-Optimized Rendering"]
+    id: "GSAP-animation",
+    icon: "Sparkles",
+    title: "GSAP Animation & Interactive UI",
+    shortDesc: "Smooth, engaging animations and interactive web experiences powered by GSAP.",
+    detailedDesc: "I create modern and responsive web animations using GSAP to make interfaces more engaging and dynamic. From page-load animations and scroll effects to hover interactions and timeline-based transitions, I focus on smooth motion while maintaining a clean and user-friendly experience.",
+    highlights: [
+      "ScrollTrigger Animations",
+      "Timeline & Sequence Animations",
+      "Hover & Mouse Interactions",
+      "Page Load & Entrance Animations",
+      "Smooth UI Transitions"
+    ]
   },
   {
     id: "landing-pages",
     icon: "Sparkles",
-    title: "High-Conversion 3D Landing Pages",
-    shortDesc: "Captivating, high-conversion landing pages infused with GSAP micro-interactions and modern typography.",
-    detailedDesc: "Turn visitors into engaged customers with landing pages designed for viral retention. Combining cutting-edge design trends, smooth scroll animations, and lightning-fast Core Web Vitals scores.",
-    highlights: ["GSAP ScrollTrigger Magic", "Tailwind CSS Design Systems", "Sub-second LCP Performance", "A/B Test Optimized Layouts"]
+    title: "Modern Landing Pages",
+    shortDesc: "Modern, responsive landing pages enhanced with GSAP animations and interactive UI.",
+    detailedDesc: "I build clean, responsive, and engaging landing pages using React.js, Next.js, Tailwind CSS, and GSAP. I focus on attractive layouts, smooth scroll animations, interactive elements, responsive design, and fast user experiences.",
+    highlights: [
+      "GSAP ScrollTrigger Animations",
+      "Responsive Tailwind CSS Design",
+      "Interactive UI & Micro-Interactions",
+      "React.js & Next.js Development",
+      "Performance-Focused Design"
+    ]
   },
   {
     id: "ecommerce",
     icon: "ShoppingCart",
-    title: "Full-Scale E-Commerce Solutions",
-    shortDesc: "Feature-packed online shopping platforms with dynamic carts, 3D product previews, and instant checkout.",
-    detailedDesc: "Complete e-commerce architectures featuring real-time inventory management, flexible filtering systems, Stripe/PayPal payment integrations, and responsive checkout experiences.",
-    highlights: ["3D Interactive Product Models", "Custom Cart & Checkout Flows", "Payment Gateway Integrations", "Optimized Search & Filtering"]
+    title: "E-Commerce Web Applications",
+    shortDesc: "Modern and responsive e-commerce platforms with dynamic products, shopping carts, and smooth user experiences.",
+    detailedDesc: "I build functional e-commerce web applications with React.js and Next.js, featuring product listings, dynamic shopping carts, search and filtering, responsive layouts, and backend integration using REST APIs, PostgreSQL, and Firebase.",
+    highlights: [
+      "Dynamic Product Listings",
+      "Shopping Cart & Product Management",
+      "Search & Filtering",
+      "REST API Integration",
+      "PostgreSQL & Firebase Integration"
+    ]
   },
   {
     id: "dashboards",
     icon: "LayoutDashboard",
-    title: "Real-Time Interactive Dashboards",
-    shortDesc: "Modern data analytics control centers with real-time charts, KPIs, and sleek dark glassmorphic UI.",
-    detailedDesc: "Transform raw complex datasets into actionable visual insights. I build high-density interactive dashboards with real-time streaming, interactive charting, and exportable reporting.",
-    highlights: ["Live Real-Time Data Feeds", "Custom Chart Visualizations", "Dark/Light Glassmorphic Themes", "Export to PDF/CSV/Excel"]
+    title: "Interactive Admin Dashboards",
+    shortDesc: "Modern and responsive dashboards with dynamic data, charts, KPIs, and clean user interfaces.",
+    detailedDesc: "I build interactive admin dashboards that present complex data in a clear and user-friendly way. Using React.js, Next.js, Tailwind CSS, REST APIs, PostgreSQL, and Firebase, I create responsive interfaces with dynamic data, reusable components, charts, tables, and filtering features.",
+    highlights: [
+      "Dynamic Data & API Integration",
+      "Interactive Charts & KPIs",
+      "Responsive Dashboard UI",
+      "Search, Filtering & Data Tables",
+      "PostgreSQL & Firebase Integration"
+    ]
   },
   {
     id: "api-backend",
     icon: "Database",
-    title: "API & Database Architecture",
-    shortDesc: "Scalable REST APIs, structured PostgreSQL schemas, and real-time Firebase backend synchronization.",
-    detailedDesc: "Robust backend foundations designed to scale smoothly. Delivering clean REST APIs, secure JWT authentication, query-optimized SQL databases, and automated webhook pipelines.",
-    highlights: ["RESTful API Architecture", "PostgreSQL & SQL Schema Modeling", "Firebase Realtime Sync", "JWT, OAuth & Rate Limiting"]
+    title: "API Integration & Database Management",
+    shortDesc: "REST API integration, PostgreSQL databases, and Firebase-powered data management for modern web applications.",
+    detailedDesc: "I build and integrate REST APIs with Express.js and Node.js and work with PostgreSQL and Firebase for structured and reliable data management. I focus on CRUD operations, API integration, database connectivity, authentication, and efficient data handling.",
+    highlights: [
+      "REST API Development & Integration",
+      "Express.js & Node.js",
+      "PostgreSQL & SQL Database Management",
+      "Firebase & Firestore",
+      "CRUD Operations & Data Management"
+    ]
   }
 ];
 
 export const projectsData = [
   {
-    id: "apex-saas",
-    title: "Apex 3D SaaS Platform & Landing Page",
+    id: "Raha-Landing",
+    title: "Raha Financial - Modern FinTech Landing Page",
     category: "Landing Pages",
-    subCategory: "React & Next.js",
+    subCategory: "React js",
     featured: true,
-    tagline: "Next-gen AI workflow suite with interactive 3D hero canvas & dynamic pricing tiers.",
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop",
-    demoUrl: "https://example.com/demo/apex-saas",
-    githubUrl: "https://github.com/example/apex-3d-saas",
-    techStack: ["React.js", "Next.js", "Three.js", "Tailwind CSS", "GSAP", "Lucide React"],
-    overview: "A flagship SaaS marketing website and interactive web app crafted to showcase high-tech AI workflows. Features interactive 3D particle nodes that react to cursor trajectories, dynamic tier switches, and smooth scroll transitions.",
+    tagline: "Modern FinTech landing page with a premium interface, smooth interactions & responsive design",
+    image: Rahalanding,
+    demoUrl: "https://raha-landing.vercel.app/",
+    githubUrl: "https://github.com/umarahmed707/Raha_landing",
+    techStack: ["React.js", "Javascripti", "Tailwind CSS", "Lucide React"],
+    overview: "A modern and responsive FinTech landing page designed for Raha Financial. The website combines a clean financial aesthetic with engaging sections, smooth interactions, responsive layouts, and a professional user experience across all screen sizes.",
     features: [
-      "Interactive 3D particle nebula & geometric models powered by Three.js",
-      "GSAP ScrollTrigger for seamless feature reveal animations",
-      "Dynamic interactive ROI calculator and tiered pricing toggle",
-      "100/100 Google Lighthouse performance score with automated asset compression",
-      "Responsive design optimized across mobile, tablet, and ultra-wide screens"
+      "Modern FinTech-focused hero section with clear call-to-action",
+
+      "Responsive landing page layout optimized for mobile, tablet and desktop",
+      "Reusable React components for consistent and maintainable UI",
+      "Interactive sections with smooth hover effects and transitions",
+      "Modern financial service sections with clear visual hierarchy",
+      "Clean navigation and professional footer designed for a complete landing page experience",
     ],
     architecture: {
-      frontend: "React 18, Next.js App Router, Tailwind CSS, GSAP 3",
-      graphics: "Three.js WebGL Canvas with custom shaders and particle systems",
-      deployment: "Vercel Edge Network with dynamic image optimization"
+      frontend: "React.js, JavaScript, Tailwind CSS",
+
+      components: "Reusable and component-based React architecture",
+      icons: "Lucide React",
+      design: "Responsive and modern FinTech UI design"
     }
   },
   {
-    id: "novastore-ecommerce",
-    title: "NovaStore - Luxury 3D E-Commerce Platform",
-    category: "E-Commerce",
-    subCategory: "Full Stack",
+    id: "Raha_Financial",
+    title: "Raha Financial - Modern Financial Website",
+    category: "FinTech",
+    subCategory: "React js",
     featured: true,
-    tagline: "Full-scale modern e-commerce storefront with interactive 3D product view, cart drawer & Stripe checkout.",
-    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1200&auto=format&fit=crop",
-    demoUrl: "https://example.com/demo/novastore",
-    githubUrl: "https://github.com/example/novastore-ecommerce",
-    techStack: ["React.js", "Express.js", "PostgreSQL", "Tailwind CSS", "Stripe API", "REST API"],
-    overview: "A production-grade e-commerce application providing users with a 360-degree 3D product inspection tool, instant search filtering, persistent shopping cart drawer, and multi-step secure checkout.",
+    tagline: "Modern and responsive financial website with a premium interface, engaging visuals, and seamless user experience.",
+    image: rahaWeb,
+    demoUrl: "https://raha-web.vercel.app/",
+    githubUrl: "https://github.com/umarahmed707/Raha_web",
+    techStack: ["React.js", "JavaScript", "Tailwind CSS", "Responsive Design"],
+    overview: "A modern frontend financial website built to deliver a professional and engaging digital experience. The website combines a clean FinTech-inspired interface, responsive layouts, reusable React components, and smooth visual interactions.",
     features: [
-      "360-degree interactive 3D product inspection and color customizer",
-      "Optimized PostgreSQL catalog with multi-facet category and price filtering",
-      "Express.js REST API with JWT authentication and order processing",
-      "Persistent state cart drawer with real-time stock verification",
-      "Stripe Checkout integration with webhook-driven order fulfillment"
+      "Modern and responsive financial website design",
+      "Professional FinTech-inspired user interface with clean visual hierarchy",
+      "Reusable React components for scalable and maintainable UI",
+      "Responsive layouts optimized for desktop, tablet and mobile devices",
+      "Interactive sections with smooth transitions and engaging visual elements",
+      "Clean navigation and user-friendly website experience"
     ],
     architecture: {
-      frontend: "React.js, Tailwind CSS, Three.js Model Viewer",
-      backend: "Node.js, Express.js REST API, JWT Authentication",
-      database: "PostgreSQL with connection pooling and automated indexing",
-      payments: "Stripe API Webhooks"
+      frontend: "React.js, JavaScript, Tailwind CSS",
+      design: "Responsive and component-based UI architecture",
+      interactions: "Interactive sections and smooth UI transitions",
+      data: "Frontend static/mock content"
     }
   },
   {
-    id: "quantum-dashboard",
-    title: "Quantum - Real-Time Analytics & Cloud Dashboard",
-    category: "Dashboards",
-    subCategory: "React & Next.js",
+    id: "Auto_Eye",
+    title: "AutoEye - Smart Vehicle Detection Platform",
+    category: "Web Applications",
+    subCategory: "React js",
     featured: true,
     tagline: "Futuristic dark-glass control center with live KPI streaming, financial charts & server telemetry.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    image: AutoEye,
     demoUrl: "https://example.com/demo/quantum-dashboard",
     githubUrl: "https://github.com/example/quantum-analytics-dashboard",
-    techStack: ["React.js", "Next.js", "Tailwind CSS", "PostgreSQL", "REST API", "SQL"],
+    techStack: ["React.js", "Next.js", "Tailwind CSS"],
     overview: "A comprehensive SaaS telemetry and revenue intelligence dashboard. Features live data charts, geographical user heatmaps, automated PDF report generation, and configurable dark/cyber themes.",
     features: [
       "Live updating metric cards with animated percent changes",
@@ -305,51 +350,69 @@ export const projectsData = [
     }
   },
   {
-    id: "nexus-api-orchestrator",
-    title: "Nexus - Cloud API Hub & Database Manager",
-    category: "Full Stack",
-    subCategory: "Dashboards",
-    featured: false,
-    tagline: "Developer control plane for managing REST APIs, PostgreSQL schemas & Firebase webhooks in real-time.",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop",
-    demoUrl: "https://example.com/demo/nexus-orchestrator",
-    githubUrl: "https://github.com/example/nexus-cloud-hub",
-    techStack: ["Express.js", "PHP", "PostgreSQL", "Firebase", "REST API", "React.js"],
-    overview: "An enterprise developer platform unifying API endpoints, Firebase event listeners, and PostgreSQL visual table designers under a single responsive dashboard.",
+    id: "naked-turtle",
+    title: "Naked Turtle - Modern Creative Website",
+    category: "Web Applications",
+    subCategory: "HTML, CSS & JavaScript",
+    featured: true,
+    tagline: "Creative and responsive website with modern visuals, interactive elements & smooth user experience.",
+    image: Naket,
+    demoUrl: "https://naked-turtle.vercel.app/",
+    githubUrl: "https://github.com/umarahmed707/NakedTurtle",
+    techStack: ["HTML", "Javascripti", "CSS"],
+    overview: "A modern frontend website built with HTML, CSS, and JavaScript, focusing on clean visual design, responsive layouts, interactive elements, and a smooth browsing experience across different screen sizes.",
+
     features: [
-      "Visual SQL database schema designer with exportable DDL scripts",
-      "Built-in REST API testing sandbox with latency monitoring",
-      "Firebase Cloud Firestore live document listener and sync debugger",
-      "Role-based API key management with rate limiting rules",
-      "PHP & Express.js microservice architecture"
+      "Modern and visually engaging hero section",
+      "Fully responsive design for desktop, tablet and mobile devices",
+      "Interactive UI elements powered by JavaScript",
+      "Smooth animations, hover effects and transitions",
+      "Clean navigation with structured content sections",
+      "Semantic HTML and organized CSS for a maintainable frontend"
     ],
     architecture: {
-      frontend: "React.js, Tailwind CSS, Monaco Editor integration",
-      backend: "Express.js + PHP 8 microservices",
-      database: "PostgreSQL & Firebase Realtime Cloud Firestore"
+      frontend: "HTML5, CSS3, JavaScript",
+      structure: "Semantic HTML-based website structure",
+      styling: "Custom responsive CSS",
+      interactions: "Vanilla JavaScript for interactive UI elements",
+      design: "Responsive and modern creative web design"
     }
   },
   {
-    id: "aura-creative-landing",
-    title: "Aura - 3D Interactive Design Studio Landing",
-    category: "Landing Pages",
-    subCategory: "React & Next.js",
+    id: "product-management",
+    title: "Product Management - React & Express.js",
+    category: "Full Stack",
+    subCategory: "React.js & Express.js",
     featured: false,
-    tagline: "Award-winning digital agency landing page with fluid 3D distortion meshes and GSAP kinetic typography.",
-    image: "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?q=80&w=1200&auto=format&fit=crop",
-    demoUrl: "https://example.com/demo/aura-studio",
-    githubUrl: "https://github.com/example/aura-3d-agency",
-    techStack: ["React.js", "Three.js", "GSAP", "Tailwind CSS", "WebGL"],
-    overview: "A showcase of boundary-pushing web creative techniques. Combines WebGL fluid shaders, scroll-driven camera paths, and custom typography animations to create an unforgettable brand narrative.",
+    tagline: "Product management application with React.js frontend, Express.js REST API & Axios integration..",
+    image: ecom,
+    demoUrl: "https://front-end-mu-ruby.vercel.app/",
+    githubUrl: "https://github.com/umarahmed707/expresss.api",
+    techStack: ["React.js", "JavaScript", "Express.js", "REST API", "Axios"],
+    overview: "A full-stack product management application built with React.js and Express.js. The application allows users to add new products through an interactive form and retrieve product data from a backend REST API using Axios.",
     features: [
-      "Custom WebGL shader background with interactive cursor ripple waves",
-      "Kinetic text reveals and smooth magnetic cursor hover effects",
-      "Interactive 3D case study carousel with depth parallax",
-      "Sound design audio feedback toggle for enhanced immersion"
+      "Add new products through a simple and user-friendly React form",
+
+      "Fetch and display product data from the Express.js REST API",
+
+      "Axios integration for seamless frontend-to-backend API communication",
+
+      "Express.js REST API endpoints for product creation and retrieval",
+
+      "Dynamic product listing based on API response data",
+
+      "Responsive and clean interface for managing product information"
     ],
     architecture: {
-      frontend: "React.js, Tailwind CSS, GSAP ScrollTrigger",
-      graphics: "Three.js WebGL Canvas with GLSL fragment shaders"
+      frontend: "React.js, JavaScript",
+
+      backend: "Express.js",
+
+      apiIntegration: "Axios",
+
+      api: "REST API for product creation and retrieval",
+
+      operations: "Add Product & Get Products"
     }
   },
   {
@@ -380,86 +443,64 @@ export const projectsData = [
 
 export const experienceData = [
   {
-    period: "2023 - Present",
-    role: "Senior Full-Stack & 3D Web Engineer",
-    company: "Vortex Digital Innovations",
-    location: "San Francisco, CA (Remote)",
-    description: "Leading frontend architecture and 3D interactive web experiences for Fortune 500 clients. Building high-performance React/Next.js platforms, Three.js visualizations, and scalable PostgreSQL/Express backends.",
+    period: "Jan 2026 - July 2026",
+    role: "React.js Engineer",
+    company: "TFG SOLUTION",
+    location: "Shahrah-e-Faisal",
+   description: "Developed modern and responsive web interfaces using React.js, utilizing React Hooks such as useState and useEffect for state management and dynamic UI behavior. Built reusable components and responsive layouts for different screen sizes, while implementing smooth animations and interactive experiences using GSAP and CSS animations. Focused on clean code, user-friendly interfaces, and engaging frontend experiences.",
     achievements: [
-      "Boosted client conversion rates by 42% via immersive 3D landing page experiences.",
-      "Engineered reusable component design system adopted by 15+ engineering teams.",
-      "Optimized Core Web Vitals to achieve top 99th percentile across client applications."
+    "Developed scalable and responsive React.js interfaces using reusable components and modern React Hooks for efficient state and UI management.",
+"Implemented smooth, interactive animations using GSAP and CSS, enhancing user engagement and overall frontend experience.",
+"Built responsive, cross-device layouts with a strong focus on performance, usability, accessibility, and consistent UI design."
     ],
-    skills: ["React.js", "Next.js", "Three.js", "GSAP", "Tailwind CSS", "PostgreSQL", "Express.js"]
+    skills: ["React.js", "Next.js", "GSAP", "Tailwind CSS"]
   },
-  {
-    period: "2021 - 2023",
-    role: "Full-Stack Web Developer",
-    company: "Quantum Software Labs",
-    location: "Austin, TX",
-    description: "Developed and maintained full-stack web applications, e-commerce storefronts, and real-time dashboard solutions using React, PHP, Express, and SQL databases.",
-    achievements: [
-      "Architected real-time analytics portal managing 1.5M+ daily event records with PostgreSQL.",
-      "Built custom payment gateways and checkout flows with Stripe and REST APIs.",
-      "Migrated legacy monolithic systems to modular React and REST microservices."
-    ],
-    skills: ["React.js", "PHP", "SQL", "Express.js", "REST APIs", "Firebase", "Tailwind CSS"]
-  },
-  {
-    period: "2019 - 2021",
-    role: "Frontend & UI/UX Developer",
-    company: "PixelCraft Interactive",
-    location: "Seattle, WA",
-    description: "Focused on crafting high-converting responsive web interfaces, interactive JavaScript animations, and custom CSS styling for high-growth tech startups.",
-    achievements: [
-      "Built over 25+ pixel-perfect client landing pages and interactive marketing websites.",
-      "Introduced GSAP animation pipelines and improved user engagement time by 35%."
-    ],
-    skills: ["JavaScript", "HTML5", "CSS3", "React.js", "GSAP", "Tailwind CSS"]
-  }
+ 
+  
 ];
 
 export const educationData = [
   {
-    degree: "B.S. in Computer Science",
-    institution: "University of California, Berkeley",
-    year: "2015 - 2019",
-    details: "Focused on Software Architecture, Web Technologies, Database Systems & Computer Graphics."
+    degree: "B.S. in Cloud Application Development and operating",
+    institution: "University of Hamdard",
+    year: "2026 - 2029",
+    details: "Focused on Cloud Computing, Web Application Development, Software Architecture, Database Systems, APIs, and Modern Application Deployment."
   },
   {
-    degree: "Advanced Full-Stack & Cloud Certification",
-    institution: "Meta / AWS Certified",
-    year: "2021",
-    details: "Comprehensive specialization in Cloud Systems, PostgreSQL Optimization, and Modern React Architecture."
+    degree: "Modern MERN Stack Development",
+    institution: "SMIT",
+    year: "2026",
+    details: "Comprehensive training in MongoDB, Express.js, React.js, Next.js, Node.js, PostgreSQL, Firebase, REST APIs, and modern full-stack web application development."
   }
+
 ];
 
-export const testimonialsData = [
-  {
-    id: 1,
-    name: "Sarah Jenkins",
-    role: "VP of Product, CloudScale AI",
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
-    content: "Alex completely transformed our SaaS landing page into an interactive 3D masterpiece. Our conversion rate skyrocketed by 40% within the first month. Incredible attention to detail, performance, and clean code!",
-    rating: 5,
-    project: "Apex 3D SaaS Platform"
-  },
-  {
-    id: 2,
-    name: "Marcus Vance",
-    role: "Founder & CEO, Nova Brands",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop",
-    content: "The 3D e-commerce platform Alex built for us exceeded all expectations. Fast load times, slick 3D product customizer, and a rock-solid PostgreSQL backend. Highly recommended for any serious web venture.",
-    rating: 5,
-    project: "NovaStore E-Commerce"
-  },
-  {
-    id: 3,
-    name: "Elena Rostova",
-    role: "Lead Architect, DataStream Global",
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop",
-    content: "One of the most versatile engineers I have collaborated with. Strong mastery across the entire stack—from Three.js shaders and React to Express and SQL optimization. Delivered ahead of schedule!",
-    rating: 5,
-    project: "Quantum Analytics Dashboard"
-  }
-];
+// export const testimonialsData = [
+//   {
+//     id: 1,
+//     name: "Sarah Jenkins",
+//     role: "VP of Product, CloudScale AI",
+//     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
+//     content: "Alex completely transformed our SaaS landing page into an interactive 3D masterpiece. Our conversion rate skyrocketed by 40% within the first month. Incredible attention to detail, performance, and clean code!",
+//     rating: 5,
+//     project: "Apex 3D SaaS Platform"
+//   },
+//   {
+//     id: 2,
+//     name: "Marcus Vance",
+//     role: "Founder & CEO, Nova Brands",
+//     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop",
+//     content: "The 3D e-commerce platform Alex built for us exceeded all expectations. Fast load times, slick 3D product customizer, and a rock-solid PostgreSQL backend. Highly recommended for any serious web venture.",
+//     rating: 5,
+//     project: "NovaStore E-Commerce"
+//   },
+//   {
+//     id: 3,
+//     name: "Elena Rostova",
+//     role: "Lead Architect, DataStream Global",
+//     avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop",
+//     content: "One of the most versatile engineers I have collaborated with. Strong mastery across the entire stack—from Three.js shaders and React to Express and SQL optimization. Delivered ahead of schedule!",
+//     rating: 5,
+//     project: "Quantum Analytics Dashboard"
+//   }
+// ];
