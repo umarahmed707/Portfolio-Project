@@ -272,7 +272,7 @@ export default function HeroSection({ onOpenResume }) {
                       </h3>
 
                       <p className="text-sm text-slate-300">
-                        3D & Full-Stack Developer
+                        MERN Stack Developer
                       </p>
                     </div>
 

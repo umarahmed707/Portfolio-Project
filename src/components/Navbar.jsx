@@ -102,7 +102,7 @@ const downloadCV = () => {
               {personalInfo.name}
             </span>
             <span className="text-[11px] font-mono text-cyan-400/90 tracking-wider">
-              MERN-Stack & 3D Web Creative
+              MERN-Stack Developer
             </span>
           </div>
         </a>

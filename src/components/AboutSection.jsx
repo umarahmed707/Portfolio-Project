@@ -84,7 +84,7 @@ const downloadCV = () => {
                     LVL. 50
                   </div>
                   <div className="absolute bottom-3 right-3 px-2 py-0.5 rounded bg-slate-950/80 border border-cyan-500/30 text-[10px] font-mono text-cyan-300">
-                    EXPERIENCE: 1+ YRS
+                    EXPERIENCE: 6+ YRS
                   </div>
                 </div>
 
@@ -107,8 +107,8 @@ const downloadCV = () => {
                 {/* Core Strengths Checklist */}
                 <div className="space-y-2.5">
                   {[
-                    "Interactive 3D GSAP Animation",
-                    "React 18 & Next.js Architecture",
+                    "Interactive GSAP Animation",
+                    "React & Next.js Architecture",
                     "Express.js & REST API Engineering",
                     "PostgreSQL & Firebase Cloud Datastores",
                     "Tailwind CSS Precision & Responsive Systems",
