@@ -17,9 +17,14 @@ import {
 } from 'lucide-react';
 import { personalInfo, educationData } from '../data/portfolioData';
 
-export default function AboutSection({ onOpenResume }) {
+export default function AboutSection() {
   const [activeTab, setActiveTab] = useState('story'); // 'story', 'philosophy', 'education'
-
+const downloadCV = () => {
+  const link = document.createElement("a");
+  link.href = cv;
+  link.download = "Umar-Ahmed.pdf";
+  link.click();
+};
   return (
     <section id="about" className="relative py-20 overflow-hidden">
       {/* Background Orbs */}
@@ -70,7 +75,7 @@ export default function AboutSection({ onOpenResume }) {
                     </div>
                     <div className="mt-4 px-3 py-1 rounded-full bg-slate-900/90 border border-cyan-500/40 text-[11px] font-mono text-cyan-300 flex items-center gap-1.5">
                       <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
-                      Full-Stack 3D Engineer
+                      MERN Stack Developer
                     </div>
                   </div>
 
@@ -117,11 +122,11 @@ export default function AboutSection({ onOpenResume }) {
 
                 {/* Action Resume Button */}
                 <button
-                  onClick={onOpenResume}
+                  onClick={downloadCV}
                   className="w-full py-3 rounded-xl bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white font-semibold text-xs tracking-wide transition-all shadow-neon-purple/20 flex items-center justify-center gap-2"
                 >
                   <Download className="w-4 h-4" />
-                  View & Download Full Resume
+                Download Resume
                 </button>
               </div>
             </div>

@@ -3,18 +3,19 @@ import Rahalanding from "../assets/raha-landing.png"
 import AutoEye from "../assets/Auot-eye.png"
 import Naket from "../assets/Naket.png"
 import ecom from "../assets/Ecom-web.png"
+import student from "../assets/Student-management.png"
 
 
 export const personalInfo = {
   name: "Umar Ahmed",
-  role: "MERN-Stack & 3D Web Creative",
+  role: "MERN-Stack Developer",
   experienceYears: "1",
   tagline: "Crafting High-Performance Web Applications & Scalable MERN STACK Solutions.",
 
   shortBio: "Passionate MERN Stack Developer specializing in building modern web applications with React, Next.js, and scalable backends using Express.js, Node.js, PostgreSQL, and Firebase.",
 
   aboutText: [
-    "I am a passionate MERn STack Developer focused on building modern, responsive, and user-friendly web applications. I specialize in creating engaging frontend experiences with React.js, Next.js, HTML5, CSS3, Tailwind CSS, and GSAP.",
+    "I am a passionate MERN Stack Developer focused on building modern, responsive, and user-friendly web applications. I specialize in creating engaging frontend experiences with React.js, Next.js, HTML5, CSS3, Tailwind CSS, and GSAP.",
 
     "I enjoy transforming ideas into functional digital products by combining clean UI design with reliable backend architecture. My backend development experience includes building REST APIs with Express.js and working with PostgreSQL and Firebase for structured, scalable, and reliable data management.",
 
@@ -146,7 +147,7 @@ export const skillsData = [
     name: "REST API Design",
     category: "Backend",
     level: 94,
-    experience: "5+ years",
+    experience: "Beginner",
     description: "OpenAPI/Swagger documentation, Webhooks, Caching headers, Versioning & CORS",
     badge: "Architecture",
     color: "#FF5722",
@@ -154,16 +155,16 @@ export const skillsData = [
   },
 
   // Database & Cloud
-  // {
-  //   name: "PostgreSQL",
-  //   category: "Database",
-  //   level: 90,
-  //   experience: "4+ years",
-  //   description: "Complex Joins, Indexing, Triggers, JSONB storage, Stored Procedures, Prisma / TypeORM",
-  //   badge: "Relational DB",
-  //   color: "#336791",
-  //   popular: true
-  // },
+  {
+    name: "PostgreSQL",
+    category: "Database",
+    level: 90,
+    experience: "Beginner",
+    description: "Complex Joins, Indexing, Triggers, JSONB storage, Stored Procedures, Prisma / TypeORM",
+    badge: "Relational DB",
+    color: "#336791",
+    popular: true
+  },
   // {
   //   name: "SQL",
   //   category: "Database",
@@ -178,7 +179,7 @@ export const skillsData = [
     name: "Firebase",
     category: "Database",
     level: 88,
-    experience: "4+ years",
+    experience: "Entry Level",
     description: "Cloud Firestore, Firebase Authentication, Cloud Functions, Realtime DB, Storage",
     badge: "BaaS & Cloud",
     color: "#FFCA28",
@@ -301,7 +302,7 @@ export const projectsData = [
     id: "Raha_Financial",
     title: "Raha Financial - Modern Financial Website",
     category: "FinTech",
-    subCategory: "React js",
+    subCategory: "Frontend",
     featured: true,
     tagline: "Modern and responsive financial website with a premium interface, engaging visuals, and seamless user experience.",
     image: rahaWeb,
@@ -328,7 +329,7 @@ export const projectsData = [
     id: "Auto_Eye",
     title: "AutoEye - Smart Vehicle Detection Platform",
     category: "Web Applications",
-    subCategory: "React js",
+    subCategory: "Frontend",
     featured: true,
     tagline: "Futuristic dark-glass control center with live KPI streaming, financial charts & server telemetry.",
     image: AutoEye,
@@ -353,7 +354,7 @@ export const projectsData = [
     id: "naked-turtle",
     title: "Naked Turtle - Modern Creative Website",
     category: "Web Applications",
-    subCategory: "HTML, CSS & JavaScript",
+    subCategory: "Frontend",
     featured: true,
     tagline: "Creative and responsive website with modern visuals, interactive elements & smooth user experience.",
     image: Naket,
@@ -382,7 +383,7 @@ export const projectsData = [
     id: "product-management",
     title: "Product Management - React & Express.js",
     category: "Full Stack",
-    subCategory: "React.js & Express.js",
+    subCategory: "E-Commerce",
     featured: false,
     tagline: "Product management application with React.js frontend, Express.js REST API & Axios integration..",
     image: ecom,
@@ -415,36 +416,39 @@ export const projectsData = [
       operations: "Add Product & Get Products"
     }
   },
-  {
-    id: "pulse-ecommerce-store",
-    title: "Pulse - Multi-Vendor Gadget Marketplace",
-    category: "E-Commerce",
-    subCategory: "Full Stack",
-    featured: false,
-    tagline: "Modern consumer electronics store with real-time stock sync, user reviews & Firebase auth.",
-    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1200&auto=format&fit=crop",
-    demoUrl: "https://example.com/demo/pulse-store",
-    githubUrl: "https://github.com/example/pulse-marketplace",
-    techStack: ["React.js", "Firebase", "Express.js", "SQL", "Tailwind CSS", "REST API"],
-    overview: "A fast, consumer-centric electronics marketplace offering instant product filtering, user review submissions, real-time cart synchronization across devices, and wishlist collections.",
-    features: [
-      "Firebase Auth with Google One-Tap & Email login",
-      "Real-time customer reviews and rating aggregations",
-      "Dynamic price sliders, brand filter chips, and live search autocomplete",
-      "Order status tracking portal with simulated delivery updates"
-    ],
-    architecture: {
-      frontend: "React.js, Tailwind CSS, Context State Store",
-      backend: "Express.js API + Firebase Cloud Functions",
-      database: "Firebase Firestore & SQL sync layer"
-    }
-  }
+ {
+id: "Student Management System",
+title: "Student Management System",
+category: "Management System",
+subCategory: "Full Stack",
+featured: false,
+tagline: "Full-stack student management system for managing student records, profiles, and academic data with a clean and responsive interface.",
+image: student,
+demoUrl: "https://student-management-backend-rosy-delta.vercel.app/",
+githubUrl: "https://github.com/umarahmed707/Student-management-backend",
+techStack: ["React.js", "Tailwind CSS", "Express.js", "PostgreSQL", "REST API"],
+overview: "A full-stack Student Management System designed to efficiently manage student records through a responsive React.js interface, Express.js REST APIs, and a PostgreSQL database. The system supports creating, viewing, updating, and deleting student information with seamless frontend-backend integration.",
+features: [
+"Add and manage student records through a responsive interface",
+"View complete student information in an organized data table",
+"Update and delete existing student records",
+"REST API integration between React.js frontend and Express.js backend",
+"PostgreSQL database for persistent and structured student data",
+"Responsive UI built with React.js and Tailwind CSS"
+],
+architecture: {
+frontend: "React.js, Tailwind CSS, Axios",
+backend: "Express.js REST API",
+database: "PostgreSQL"
+}
+}
+
 ];
 
 export const experienceData = [
   {
     period: "Jan 2026 - July 2026",
-    role: "React.js Engineer",
+    role: "Frontend Engineer",
     company: "TFG SOLUTION",
     location: "Shahrah-e-Faisal",
    description: "Developed modern and responsive web interfaces using React.js, utilizing React Hooks such as useState and useEffect for state management and dynamic UI behavior. Built reusable components and responsive layouts for different screen sizes, while implementing smooth animations and interactive experiences using GSAP and CSS animations. Focused on clean code, user-friendly interfaces, and engaging frontend experiences.",

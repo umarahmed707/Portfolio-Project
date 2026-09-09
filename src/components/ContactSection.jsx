@@ -97,7 +97,7 @@ export default function ContactSection({ selectedService }) {
   };
 
   return (
-    <section id="contact" className="relative py-20 lg:py-28 overflow-hidden">
+    <section id="contact" className="relative py-10 overflow-hidden">
       {/* Glow Orbs */}
       <div className="glow-orb-purple top-1/4 -right-10 -z-10 opacity-50" />
       <div className="glow-orb-cyan bottom-10 left-10 -z-10 opacity-50" />
@@ -105,7 +105,7 @@ export default function ContactSection({ selectedService }) {
       <div className="max-w-[1700px] mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div className="text-center max-w-3xl mx-auto mb-10 space-y-3">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-xs font-mono">
             <Mail className="w-3.5 h-3.5" />
             INITIATE COLLABORATION

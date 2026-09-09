@@ -12,8 +12,9 @@ import {
   ArrowUpRight 
 } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
+import cv from '../assets/Umar_Ahmed.pdf'
 
-export default function Navbar({ onOpenResume }) {
+export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
@@ -28,6 +29,13 @@ export default function Navbar({ onOpenResume }) {
     // { name: 'Terminal', href: '#terminal' },
     { name: 'Contact', href: '#contact' },
   ];
+ 
+const downloadCV = () => {
+  const link = document.createElement("a");
+  link.href = cv;
+  link.download = "Umar-Ahmed.pdf";
+  link.click();
+};
 
   useEffect(() => {
     const handleScroll = () => {
@@ -131,16 +139,16 @@ export default function Navbar({ onOpenResume }) {
             Available for hire
           </div>
 
-          {/* Quick Resume View */}
+          
           <button
-            onClick={onOpenResume}
+            onClick={downloadCV}
             className="px-3.5 py-2 rounded-xl text-xs font-medium text-slate-300 hover:text-white border border-slate-700/80 hover:border-cyan-500/50 bg-slate-900/50 hover:bg-slate-800/80 transition-all flex items-center gap-1.5"
           >
             Resume
             <ArrowUpRight className="w-3.5 h-3.5 text-cyan-400" />
           </button>
 
-          {/* Contact / Hire Me Button */}
+        
           <a
             href="#contact"
             onClick={(e) => handleNavClick(e, '#contact')}

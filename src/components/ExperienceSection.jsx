@@ -4,7 +4,7 @@ import { experienceData } from '../data/portfolioData';
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="relative py-20 lg:py-28 overflow-hidden">
+    <section id="experience" className="relative py-20 overflow-hidden">
       {/* Ambient glow */}
       <div className="glow-orb-purple bottom-10 right-1/4 -z-10 opacity-50" />
 

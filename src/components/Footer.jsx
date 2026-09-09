@@ -62,15 +62,12 @@ export default function Footer() {
               </div>
             </div>
 
-            <p className="text-xs sm:text-sm text-slate-400 max-w-sm leading-relaxed font-sans">
-              Pushing digital craft forward with 3D WebGL interfaces, fluid animations, and high-concurrency cloud backends.
-            </p>
+  
+<p className="text-xs sm:text-sm text-slate-400 max-w-sm leading-relaxed font-sans">
+  Building modern, responsive web applications with React.js, scalable backend APIs, and clean, user-focused interfaces.
+</p>
 
-            {/* Live Clock Pill */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs font-mono text-cyan-300">
-              <Clock className="w-3.5 h-3.5 text-cyan-400" />
-              <span>Local System Time: {time || 'Loading...'}</span>
-            </div>
+           
           </div>
 
           {/* Navigation links column */}
@@ -80,12 +77,12 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-xs font-medium">
               {[
-                { name: 'Home / Hero Canvas', href: '#home' },
+                { name: 'Home', href: '#home' },
                 { name: 'About & Philosophy', href: '#about' },
                 { name: 'Services & Capabilities', href: '#services' },
                 { name: 'Showcase Projects', href: '#projects' },
                 { name: 'Technical Skills Matrix', href: '#skills' },
-                { name: 'Developer CLI Terminal', href: '#terminal' },
+                // { name: 'Developer CLI Terminal', href: '#terminal' },
                 { name: 'Contact & Inquiries', href: '#contact' },
               ].map((item, idx) => (
                 <li key={idx}>
@@ -113,9 +110,9 @@ export default function Footer() {
 
             <div className="flex items-center gap-2 pt-1">
               {[
-                { icon: <GithubIcon className="w-4 h-4" />, href: personalInfo.socials.github, label: "GitHub" },
-                { icon: <LinkedinIcon className="w-4 h-4" />, href: personalInfo.socials.linkedin, label: "LinkedIn" },
-                { icon: <TwitterIcon className="w-4 h-4" />, href: personalInfo.socials.twitter, label: "Twitter" },
+                { icon: <GithubIcon className="w-4 h-4" />, href: personalInfo.socials.github, label: "https://github.com/umarahmed707?tab=repositories" },
+                { icon: <LinkedinIcon className="w-4 h-4" />, href: personalInfo.socials.linkedin, label: "https://www.linkedin.com/in/umarahmedansari/" },
+                // { icon: <TwitterIcon className="w-4 h-4" />, href: personalInfo.socials.twitter, label: "Twitter" },
               ].map((s, idx) => (
                 <a
                   key={idx}
@@ -131,7 +128,7 @@ export default function Footer() {
             </div>
 
             <div className="p-3.5 rounded-2xl bg-slate-900/60 border border-slate-800/80 text-[11px] font-mono text-slate-400">
-              <span className="text-emerald-400">● 100% Remote-Ready</span> • High Availability
+              <span className="text-emerald-400">● 100% Full-time & Remote-Ready</span> • High Availability
             </div>
           </div>
 
@@ -140,7 +137,7 @@ export default function Footer() {
         {/* Bottom copyright & Back to top */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
           <div className="flex items-center gap-2 text-slate-500">
-            <span>© {new Date().getFullYear()} {personalInfo.name}. Engineered with React, Tailwind & Three.js.</span>
+            <span>© {new Date().getFullYear()} {personalInfo.name}. Engineered with React js, Express.js</span>
           </div>
 
           {/* Back to top rocket button */}

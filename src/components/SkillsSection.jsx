@@ -144,10 +144,10 @@ export default function SkillsSection() {
 
           <div className="flex flex-wrap items-center justify-center gap-2.5">
             {[
-              "React.js 18", "Next.js 14", "HTML5 Semantic", "CSS3 Flex/Grid", "JavaScript ES6+",
-              "Tailwind CSS v3", "GSAP 3 ScrollTrigger", "Three.js WebGL", "Express.js REST",
-              "PHP 8 OOP", "PostgreSQL", "SQL Relational", "Firebase Firestore", "RESTful APIs",
-              "OAuth / JWT", "Docker", "Git / GitHub", "Vite", "Responsive Design", "WebGL Shaders"
+              "React.js", "Next.js", "HTML5 Semantic", "CSS3 Flex/Grid", "JavaScript ES6+",
+              "Tailwind CSS ", "GSAP 3 ScrollTrigger", "Express.js REST",
+             "PostgreSQL", "Firebase Firestore", "RESTful APIs",
+              "Git / GitHub", "Vite", "Responsive Design"
             ].map((tag, idx) => (
               <span
                 key={idx}

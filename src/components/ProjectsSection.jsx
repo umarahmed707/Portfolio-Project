@@ -20,7 +20,7 @@ export default function ProjectsSection() {
     'All',
     'Landing Pages',
     'E-Commerce',
-    'Dashboards',
+    'Frontend',
     'Full Stack',
   ];
 

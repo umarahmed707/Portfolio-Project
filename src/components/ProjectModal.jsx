@@ -23,22 +23,22 @@ export default function ProjectModal({ project, onClose }) {
   const [activeTab, setActiveTab] = useState('overview');
   
   // Interactive Sandbox state for live demo simulation
-  const [sandboxState, setSandboxState] = useState({
-    // E-commerce state
-    cartCount: 2,
-    selectedColor: 'Cyan',
-    selectedSize: 'Pro (512GB)',
-    isCheckingOut: false,
+  // const [sandboxState, setSandboxState] = useState({
+  //   // E-commerce state
+  //   cartCount: 2,
+  //   selectedColor: 'Cyan',
+  //   selectedSize: 'Pro (512GB)',
+  //   isCheckingOut: false,
     
-    // Dashboard state
-    timeRange: '7D',
-    simulatedMetric: 142850,
-    serverHealth: '99.98%',
+  //   // Dashboard state
+  //   timeRange: '7D',
+  //   simulatedMetric: 142850,
+  //   serverHealth: '99.98%',
     
-    // Landing page state
-    tier: 'annual',
-    activeHeroScene: 'Particle Sphere',
-  });
+  //   // Landing page state
+  //   tier: 'annual',
+  //   activeHeroScene: 'Particle Sphere',
+  // });
 
   // Handle escape key
   useEffect(() => {
@@ -227,153 +227,8 @@ export default function ProjectModal({ project, onClose }) {
             </div>
           )}
 
-          {/* TAB 4: INTERACTIVE SANDBOX DEMO */}
-          {activeTab === 'sandbox' && (
-            <div className="space-y-6 animate-in fade-in">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2 text-xs font-mono text-cyan-300">
-                  <Play className="w-3.5 h-3.5 fill-cyan-300 text-cyan-300" />
-                  LIVE INTERACTIVE SANDBOX SIMULATOR
-                </div>
-                <span className="text-[11px] font-mono text-emerald-400 bg-emerald-950/60 border border-emerald-500/40 px-2 py-0.5 rounded">
-                  STATE: LIVE & REACTIVE
-                </span>
-              </div>
-
-              {/* Dynamic Sandbox UI depending on category */}
-              {project.category === 'E-Commerce' ? (
-                /* E-Commerce Sandbox */
-                <div className="p-5 rounded-2xl bg-slate-950/80 border border-cyan-500/30 space-y-4">
-                  <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pb-4 border-b border-slate-800">
-                    <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center font-bold text-slate-950 text-xl">
-                        3D
-                      </div>
-                      <div>
-                        <div className="font-bold text-white text-sm">Quantum Neo Audio Pro</div>
-                        <div className="text-xs text-cyan-400 font-mono">$349.00 USD</div>
-                      </div>
-                    </div>
-
-                    {/* Color Swatch Selector */}
-                    <div className="flex items-center gap-2">
-                      <span className="text-xs text-slate-400 font-mono">Finish:</span>
-                      {['Cyan', 'Obsidian', 'Titanium'].map((c) => (
-                        <button
-                          key={c}
-                          onClick={() => setSandboxState((prev) => ({ ...prev, selectedColor: c }))}
-                          className={`px-2.5 py-1 rounded text-xs font-mono transition-all cursor-pointer ${
-                            sandboxState.selectedColor === c
-                              ? 'bg-cyan-500 text-slate-950 font-bold shadow-neon-cyan/40'
-                              : 'bg-slate-900 text-slate-400 border border-slate-800'
-                          }`}
-                        >
-                          {c}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="flex items-center justify-between pt-2">
-                    <div className="text-xs text-slate-400">
-                      Cart Item Count: <span className="font-mono text-cyan-400 font-bold">{sandboxState.cartCount}</span>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                      <button
-                        onClick={() => setSandboxState((prev) => ({ ...prev, cartCount: prev.cartCount + 1 }))}
-                        className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-xs font-mono text-slate-300 hover:text-white cursor-pointer"
-                      >
-                        + Add To Cart
-                      </button>
-                      <button
-                        onClick={() => {
-                          setSandboxState((prev) => ({ ...prev, isCheckingOut: true }));
-                          setTimeout(() => setSandboxState((prev) => ({ ...prev, isCheckingOut: false })), 2000);
-                        }}
-                        className="px-4 py-1.5 rounded-lg bg-emerald-500 text-slate-950 font-bold text-xs font-mono hover:bg-emerald-400 transition-colors cursor-pointer"
-                      >
-                        {sandboxState.isCheckingOut ? 'Processing Stripe...' : 'Simulate Checkout'}
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              ) : project.category === 'Dashboards' ? (
-                /* Dashboard Sandbox */
-                <div className="p-5 rounded-2xl bg-slate-950/80 border border-cyan-500/30 space-y-4">
-                  <div className="flex items-center justify-between pb-3 border-b border-slate-800">
-                    <div className="flex items-center gap-2">
-                      <TrendingUp className="w-4 h-4 text-emerald-400" />
-                      <span className="text-xs font-mono text-slate-300 font-bold">REVENUE TELEMETRY ENGINE</span>
-                    </div>
-
-                    <div className="flex items-center gap-1.5">
-                      {['24H', '7D', '30D', '1Y'].map((t) => (
-                        <button
-                          key={t}
-                          onClick={() => setSandboxState((prev) => ({ ...prev, timeRange: t, simulatedMetric: prev.simulatedMetric + Math.floor(Math.random() * 5000) }))}
-                          className={`px-2.5 py-1 rounded text-xs font-mono cursor-pointer ${
-                            sandboxState.timeRange === t
-                              ? 'bg-cyan-500/30 text-cyan-300 border border-cyan-400/50'
-                              : 'text-slate-500 hover:text-slate-300'
-                          }`}
-                        >
-                          {t}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-3 gap-3">
-                    <div className="p-3 rounded-xl bg-slate-900 border border-slate-800">
-                      <div className="text-[10px] font-mono text-slate-400">ACTIVE MRR</div>
-                      <div className="text-base sm:text-lg font-mono font-bold text-cyan-300">
-                        ${sandboxState.simulatedMetric.toLocaleString()}
-                      </div>
-                    </div>
-                    <div className="p-3 rounded-xl bg-slate-900 border border-slate-800">
-                      <div className="text-[10px] font-mono text-slate-400">UPTIME SLA</div>
-                      <div className="text-base sm:text-lg font-mono font-bold text-emerald-400">
-                        {sandboxState.serverHealth}
-                      </div>
-                    </div>
-                    <div className="p-3 rounded-xl bg-slate-900 border border-slate-800">
-                      <div className="text-[10px] font-mono text-slate-400">POSTGRES QPS</div>
-                      <div className="text-base sm:text-lg font-mono font-bold text-purple-400">
-                        12,480 req/s
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ) : (
-                /* Landing Page Sandbox */
-                <div className="p-5 rounded-2xl bg-slate-950/80 border border-cyan-500/30 space-y-4">
-                  <div className="flex items-center justify-between pb-3 border-b border-slate-800">
-                    <span className="text-xs font-mono text-slate-300">3D Particle Shader Config</span>
-                    <div className="flex items-center gap-2">
-                      {['Particle Sphere', 'Torus Knot', 'Cyber Matrix'].map((scene) => (
-                        <button
-                          key={scene}
-                          onClick={() => setSandboxState((prev) => ({ ...prev, activeHeroScene: scene }))}
-                          className={`px-2.5 py-1 rounded text-xs font-mono cursor-pointer ${
-                            sandboxState.activeHeroScene === scene
-                              ? 'bg-purple-500/30 text-purple-300 border border-purple-400/50'
-                              : 'text-slate-500 hover:text-slate-300'
-                          }`}
-                        >
-                          {scene}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 text-xs font-mono text-slate-400 flex items-center justify-between">
-                    <span>Active Render Engine: <strong className="text-cyan-300">{sandboxState.activeHeroScene}</strong></span>
-                    <span className="text-emerald-400">FPS: 60.0 (GPU Synced)</span>
-                  </div>
-                </div>
-              )}
-            </div>
-          )}
+      
+       
 
         </div>
 
