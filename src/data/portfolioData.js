@@ -4,6 +4,7 @@ import AutoEye from "../assets/Auot-eye.png"
 import Naket from "../assets/Naket.png"
 import ecom from "../assets/Ecom-web.png"
 import student from "../assets/Student-management.png"
+import AICVJobMatcher from "../assets/AICVJobMatcher.png"
 
 
 export const personalInfo = {
@@ -269,7 +270,96 @@ export const servicesData = [
 ];
 
 export const projectsData = [
-  {
+
+{
+  id: "AI-CV-Job-Matcher",
+
+  title: "AI CV Job Matcher - Intelligent Job Recommendation Platform",
+
+  category: "AI & Full Stack",
+
+  subCategory: "React.js + Python",
+
+  featured: true,
+
+  tagline:
+    "AI-powered job matching platform that analyzes CVs and recommends relevant opportunities based on skills, experience & job requirements",
+
+  image: AICVJobMatcher,
+
+  demoUrl: "https://frontend-ecru-zeta-47.vercel.app/",
+
+  githubUrl: "https://github.com/umarahmed707/ai-cv-job-matcher",
+
+  techStack: [
+    "React.js",
+    "JavaScript",
+    "Tailwind CSS",
+    "Python",
+    "FastAPI",
+    "Groq AI",
+    "LLM",
+    "REST API"
+  ],
+
+  overview:
+    "An AI-powered job matching platform built with React.js and Python that allows candidates to upload their CV and receive an AI-generated profile analysis, extracted skills, experience insights, and personalized job recommendations. The platform combines CV parsing, LLM-powered analysis, and rule-based job matching to help candidates discover relevant career opportunities.",
+
+  features: [
+
+    "AI-powered CV analysis using an LLM to understand candidate skills, experience, roles and qualifications",
+
+    "Upload and process PDF and DOCX resumes with backend validation",
+
+    "Automatic extraction of candidate information, technical skills, experience and professional profile",
+
+    "AI-generated career profile and role recommendations based on CV content",
+
+    "Job matching system that compares candidate skills and experience with job requirements",
+
+    "Match scores and skill-gap information for recommended jobs",
+
+    "Personalized job recommendations based on candidate profile and preferences",
+
+    "Responsive dashboard with dedicated CV, Job Matches and Settings sections",
+
+    "Reusable React components and context-based state management",
+
+    "Clean and responsive UI built with Tailwind CSS",
+
+    "Python FastAPI backend for CV processing, AI analysis and job matching",
+
+    "REST API integration between the React frontend and Python backend"
+
+  ],
+
+  architecture: {
+
+    frontend:
+      "React.js, JavaScript, Tailwind CSS, React Router, Context API",
+
+    backend:
+      "Python, FastAPI",
+
+    ai:
+      "Groq API, LLM-powered CV analysis and job recommendation",
+
+    cvProcessing:
+      "PDF and DOCX text extraction and validation",
+
+    matching:
+      "Skill-based job matching with match scores and skill-gap analysis",
+
+    stateManagement:
+      "React Context API",
+
+    api:
+      "REST API",
+
+    design:
+      "Responsive AI-focused dashboard UI"
+  }
+},  {
     id: "Raha-Landing",
     title: "Raha Financial - Modern FinTech Landing Page",
     category: "Landing Pages",
